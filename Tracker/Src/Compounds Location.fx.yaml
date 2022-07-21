@@ -1,0 +1,100 @@
+"'Compounds Location' As screen":
+
+    TopBar_1 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =82
+        Width: =1366
+        ZIndex: =1
+
+    Heading_1 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =RGBA(128, 128, 128, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        Size: =30
+        Text: ="Compound Location"
+        Width: =714
+        X: =348
+        Y: =9
+        ZIndex: =2
+
+    cmp_SideNav_Location As cmp_SideNav:
+        Default: ="Location"
+        Height: =768
+        Items: =colSidebarMenu
+        Visible: |
+            =true
+        Width: =90
+        ZIndex: =3
+
+    Image1_2 As image:
+        Height: =50
+        Image: =User().Image
+        Width: =50
+        X: =1150
+        Y: =16
+        ZIndex: =4
+
+    Label1_2 As label:
+        Text: =User().FullName
+        X: =1216
+        Y: =21
+        ZIndex: =5
+
+    Location_container As groupContainer.verticalAutoLayoutContainer:
+        Height: =146
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =1276
+        X: =90
+        Y: =108
+        ZIndex: =6
+
+        AddListCollection_Button As button:
+            AlignInContainer: =AlignInContainer.End
+            BorderColor: |-
+                =ColorFade(Self.Fill, -10
+                %)
+            BorderThickness: =1
+            Color: =RGBA(128, 128, 128, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -10%)
+            OnSelect: =Collect(AddCompounds,NotifyCompoundsArrival)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Add SP List Items to Collection"
+            Width: =300
+            ZIndex: =1
+
+        ViewListCollection_Button As button:
+            AlignInContainer: =AlignInContainer.End
+            BorderThickness: =1
+            Color: =RGBA(128, 128, 128, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            OnSelect: |-
+                =ClearCollect(
+                    ViewCompounds,
+                    ShowColumns(
+                        NotifyCompoundsArrival,
+                        "Provider",
+                        "Title"
+                    )
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="View Column from Collections"
+            Width: =300
+            X: =10
+            Y: =10
+            ZIndex: =2
+

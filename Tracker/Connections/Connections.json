@@ -1,0 +1,50 @@
+{
+  "c18edb83-1b55-4876-96a4-e9511f636506": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://tamucs.sharepoint.com/teams/SACNetCompoundsTracking": {
+        "dataSources": {
+          "NotifyCompoundsArrival": {
+            "tableName": "1d86ffc9-83f0-45bd-a81c-184db3035836"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "NotifyCompoundsArrival"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c18edb83-1b55-4876-96a4-e9511f636506"
+  },
+  "d79774e9-5661-43e6-bdac-fce15fbd6133": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1587/1.0.1587.2924/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d79774e9-5661-43e6-bdac-fce15fbd6133"
+  }
+}

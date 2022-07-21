@@ -1,0 +1,47 @@
+"'All Compounds' As screen":
+
+    TopBar_2 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =82
+        Width: =1366
+        ZIndex: =1
+
+    Heading_2 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =RGBA(128, 128, 128, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        Size: =30
+        Text: ="All Compounds"
+        Width: =714
+        X: =348
+        Y: =9
+        ZIndex: =2
+
+    cmp_SideNav_1 As cmp_SideNav:
+        Default: ="Repository"
+        Height: =768
+        Items: =colSidebarMenu
+        Visible: |
+            =true
+        Width: =90
+        ZIndex: =3
+
+    Image1_3 As image:
+        Height: =50
+        Image: =User().Image
+        Width: =50
+        X: =1150
+        Y: =16
+        ZIndex: =4
+
+    Label1_3 As label:
+        Text: =User().FullName
+        X: =1216
+        Y: =21
+        ZIndex: =5
+

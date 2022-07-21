@@ -1,0 +1,47 @@
+Home As screen:
+
+    TopBar_3 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderStyle: =Solid
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =82
+        Width: =1366
+        ZIndex: =1
+
+    Summary As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =RGBA(128, 128, 128, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        Size: =30
+        Text: ="Summary"
+        Width: =714
+        X: =312
+        Y: =10
+        ZIndex: =2
+
+    cmp_SideNav_Home As cmp_SideNav:
+        Default: ="Home"
+        Height: =768
+        Items: =colSidebarMenu
+        Visible: =true
+        Width: =90
+        ZIndex: =3
+
+    Profile As image:
+        Height: =50
+        Image: =User().Image
+        Width: =50
+        X: =1150
+        Y: =16
+        ZIndex: =4
+
+    "'Full Name' As label":
+        Text: =User().FullName
+        X: =1216
+        Y: =21
+        ZIndex: =5
+

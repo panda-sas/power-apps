@@ -1,0 +1,79 @@
+cmp_SideNav As CanvasComponent:
+    Color: =White
+    CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
+    Default: ="Item 1"
+    Fill: |
+        =RGBA(51, 52 ,74, 1)
+    Height: =
+    HoverFill: =RGBA(255,255,255,10%)
+    Items: |-
+        =Table(
+            {Value: "Item 1", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 2", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 3", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
+            {Value: "Item 4", Icon: Icon.Waypoint, Screen: App.ActiveScreen}
+         )
+    SelectedFill: =RGBA(255,255,255,10%)
+    Visible: =cmp_SideNav.Default
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    gal_SideNav As gallery.galleryVertical:
+        Height: =640
+        Items: =cmp_SideNav.Items
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(ThisItem.Screen)
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplatePadding: |
+            =0
+        TemplateSize: =101
+        Width: =90
+        ZIndex: =1
+
+        ico_SideNav_Icon As icon.Home:
+            Color: |
+                =cmp_SideNav.Color
+            Height: =35
+            Icon: =ThisItem.Icon
+            OnSelect: =Select(Parent)
+            Width: =35
+            X: =(Parent.TemplateWidth-Self.Width)/2
+            Y: =15
+            ZIndex: =1
+
+        lbl_SideNav_Value As label:
+            Align: |
+                =Align.Center
+            Color: =cmp_SideNav.Color
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Value
+            Width: =Parent.TemplateWidth
+            Y: =50
+            ZIndex: =2
+
+        lbl_SideNav_Current As label:
+            Fill: =cmp_SideNav.CurrentIndicatorColor
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingTop: =0
+            Text: =""
+            Visible: =ThisItem.Value=cmp_SideNav.Default
+            Width: |
+                =5
+            ZIndex: =3
+
+        lbl_SideNav_Overlay As label:
+            Fill: =If(ThisItem.Value=cmp_SideNav.Default, cmp_SideNav.SelectedFill, Transparent)
+            Height: =Parent.TemplateHeight
+            HoverFill: =cmp_SideNav.HoverFill
+            OnSelect: =Navigate(ThisItem.Screen)
+            PressedFill: =cmp_SideNav.SelectedFill
+            Text: =""
+            Width: =Parent.TemplateWidth
+            ZIndex: =4
+

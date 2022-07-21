@@ -1,0 +1,14 @@
+App As appinfo:
+    BackEnabled: =false
+    MinScreenHeight: =420
+    MinScreenWidth: =420
+    OnStart: |-
+        =Set(colSidebarMenu,
+          Table(
+            {Value: "Home", Icon: Icon.Home, Screen: Home},
+            {Value: "Upcoming Shipments", Icon: Icon.Mail, Screen: 'Upcoming Shipments'},
+            {Value: "Location", Icon: Icon.Location, Screen: 'Compounds Location'},
+            {Value: "Repository", Icon: Icon.Printing3D, Screen: 'All Compounds'}
+          )
+        )
+

@@ -1,0 +1,249 @@
+"'Upcoming Shipments' As screen":
+
+    TopBar As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderStyle: =Solid
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =82
+        Width: =1366
+        ZIndex: =1
+
+    Heading As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        Color: =RGBA(128, 128, 128, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =64
+        Size: =30
+        Text: ="All Upcoming Shipments"
+        Width: =714
+        X: =348
+        Y: =9
+        ZIndex: =2
+
+    cmp_SideNav_Upcoming As cmp_SideNav:
+        Default: ="Upcoming Shipments"
+        Height: =768
+        Items: =colSidebarMenu
+        Visible: =true
+        Width: =90
+        ZIndex: =3
+
+    Image1_1 As image:
+        Height: =50
+        Image: =User().Image
+        Width: =50
+        X: =1150
+        Y: =16
+        ZIndex: =4
+
+    Label1_1 As label:
+        Text: =User().FullName
+        X: =1216
+        Y: =21
+        ZIndex: =5
+
+    Compounds_Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =502
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =1234
+        X: =108
+        Y: =252
+        ZIndex: =6
+
+        CompoundsArrival_DataTable As dataTable.datatable:
+            BorderColor: =
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            HeadingColor: =RGBA(0, 0, 0, 1)
+            HeadingFill: =
+            Height: =500
+            Items: =Search(NotifyCompoundsArrival,Search_TextInput.Text,"TargetAssay","Provider","Title")
+            LayoutMinHeight: =250
+            LayoutMinWidth: =400
+            Width: =800
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Title_Column1 As dataTableColumn.textualColumn:
+                DisplayMode: =DisplayMode.Edit
+                FieldDisplayName: ="Title"
+                FieldName: ="Title"
+                FieldVariantName: ="textualColumn"
+                Height: =Parent.Height
+                LayoutHeight: =Parent.Height
+                Order: =6
+                Text: =ThisItem.Title
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            TrackingNumber_Column1 As dataTableColumn.textualColumn:
+                DisplayMode: =DisplayMode.Edit
+                FieldDisplayName: ="Tracking Number"
+                FieldName: ="TrackingNumber"
+                FieldVariantName: ="textualColumn"
+                Height: =Parent.Height
+                LayoutHeight: =Parent.Height
+                Order: =4
+                Text: =ThisItem.TrackingNumber
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            Provider_Column1 As dataTableColumn.textualColumn:
+                DisplayMode: =DisplayMode.Edit
+                FieldDisplayName: ="Provider"
+                FieldName: ="Provider"
+                FieldVariantName: ="textualColumn"
+                Height: =Parent.Height
+                LayoutHeight: =Parent.Height
+                Order: =2
+                Text: =ThisItem.Provider.Value
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+            ConfirmationDate_Column1 As dataTableColumn.textualColumn:
+                DisplayMode: =DisplayMode.Edit
+                FieldDisplayName: ="Confirmation Date"
+                FieldName: ="ShippedDate"
+                FieldVariantName: ="textualColumn"
+                Height: =Parent.Height
+                LayoutHeight: =Parent.Height
+                Order: =5
+                Text: =ThisItem.ConfirmationDate
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =5
+
+            OrderID_Column1 As dataTableColumn.textualColumn:
+                DisplayMode: =DisplayMode.Edit
+                FieldDisplayName: ="Order ID"
+                FieldName: ="OrderID"
+                FieldVariantName: ="textualColumn"
+                Height: =Parent.Height
+                LayoutHeight: =Parent.Height
+                Order: =1
+                Text: =ThisItem.OrderID
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =6
+
+            TargetAssay_Column1 As dataTableColumn.textualColumn:
+                DisplayMode: =DisplayMode.Edit
+                FieldDisplayName: ="Target Assay"
+                FieldName: ="TargetAssay"
+                FieldVariantName: ="textualColumn"
+                Height: =Parent.Height
+                LayoutHeight: =Parent.Height
+                Order: =3
+                Text: =ThisItem.TargetAssay
+                Width: =100
+                X: =0
+                Y: =0
+                ZIndex: =7
+
+    Actions_Container2 As groupContainer.manualLayoutContainer:
+        Height: =116
+        Width: =1234
+        X: =108
+        Y: =82
+        ZIndex: =7
+
+        CreateNew_Button As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Create New"
+            X: =6
+            Y: =39
+            ZIndex: =1
+
+        ChangeStatus_Button As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Change Status"
+            X: =192
+            Y: =39
+            ZIndex: =2
+
+        Export_Button As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Allocate"
+            X: =382
+            Y: =39
+            ZIndex: =3
+
+        Search_TextInput As text:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            Default: =""
+            HintText: ="Search"
+            HoverBorderColor: =RGBA(230, 230, 230, 1)
+            HoverColor: =RGBA(204, 204, 204, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            X: =886
+            Y: =39
+            ZIndex: =4
+
+        Search_Icon As icon.Search:
+            Color: =RGBA(128, 128, 128, 1)
+            Height: =28
+            Icon: =Icon.Search
+            Width: =28
+            X: =1164
+            Y: =46
+            ZIndex: =5
+
+        Export_Button_1 As button:
+            BorderColor: =ColorFade(Self.Fill, -10%)
+            BorderThickness: =1
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Normal
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="Export"
+            X: =570
+            Y: =39
+            ZIndex: =6
+
