@@ -32,3 +32,10 @@ HomeScreen1 As screen:
         X: =284
         ZIndex: =2
 
+    cmp_SideNav_1 As cmp_SideNav:
+        Default: ="Home"
+        Height: =Parent.Height
+        Items: =colSidebarMenu
+        Width: =80
+        ZIndex: =3
+

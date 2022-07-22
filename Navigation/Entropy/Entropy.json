@@ -1,6 +1,7 @@
 {
   "ComponentIndexes": {
-    "cmp_SideNav": 8
+    "cmp_SideNav": 8,
+    "cmp_SideNav_1": 8
   },
   "ControlUniqueIds": {
     "App": 1,
@@ -9,6 +10,7 @@
     "BrowseGallery1": 12,
     "BrowseScreen1": 3,
     "cmp_SideNav": 93,
+    "cmp_SideNav_1": 115,
     "CompoundDetailsScreen1": 111,
     "CompoundLocationScreen1": 110,
     "ConfirmationDate_DataCard1": 38,
@@ -109,7 +111,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/22/2022 19:58:26",
+  "HeaderLastSavedDateTimeUTC": "07/22/2022 20:06:18",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "290a7a63-703f-43dc-a5f0-50cae61f1156": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/11ecfc7a9aa449538d40457b84a56b77\"",
@@ -155,6 +157,7 @@
     "BrowseGallery1": 10,
     "BrowseScreen1": 0,
     "cmp_SideNav": 0,
+    "cmp_SideNav_1": 0,
     "CompoundDetailsScreen1": 0,
     "CompoundLocationScreen1": 0,
     "ConfirmationDate_DataCard1": 35,
@@ -265,6 +268,7 @@
       "circle": 1,
       "combobox": 2,
       "datepicker": 1,
+      "ef9869f680404c098fb6b6f51aa8d963": 1,
       "form": 1,
       "formViewer": 1,
       "gallery": 1,
