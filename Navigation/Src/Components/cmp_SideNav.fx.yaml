@@ -1,6 +1,7 @@
 cmp_SideNav As CanvasComponent:
     Color: =White
     CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
+    Default: ="Item 1"
     Fill: =RGBA(51, 52 ,74, 1)
     Height: =640
     HoverFill: =RGBA(255,255,255,10%)
@@ -67,4 +68,41 @@ cmp_SideNav As CanvasComponent:
             Width: =Parent.TemplateWidth
             Y: =50
             ZIndex: =2
+
+        lbl_SideNav_current As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =cmp_SideNav.CurrentIndicatorColor
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Size: =21
+            Text: =ThisItem.Icon
+            Visible: =ThisItem.Value=cmp_SideNav.Default
+            Width: =5
+            ZIndex: =3
+
+        lbl_SideNav_overlay As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =If(ThisItem.Value=cmp_SideNav.Default, cmp_SideNav.SelectedFill, Transparent)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =Parent.TemplateHeight
+            HoverFill: =cmp_SideNav.HoverFill
+            OnSelect: =Navigate(ThisItem.Screen)
+            PressedFill: =cmp_SideNav.SelectedFill
+            Size: =21
+            Text: =""
+            Width: =Parent.TemplateWidth
+            ZIndex: =4
 

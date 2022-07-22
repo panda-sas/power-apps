@@ -55,6 +55,15 @@
       "PropertyDataTypeKey": "Color",
       "Tooltip": "A custom property",
       "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "Default",
+      "Hidden": false,
+      "Name": "Default",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.324\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -65,7 +74,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637941065339467250",
+  "LastModifiedTimestamp": "637941071686234075",
   "Name": "ef9869f680404c098fb6b6f51aa8d963",
   "OverridableProperties": {},
   "Version": "637941025611710172"
