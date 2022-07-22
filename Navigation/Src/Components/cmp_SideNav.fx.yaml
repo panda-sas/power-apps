@@ -17,3 +17,54 @@ cmp_SideNav As CanvasComponent:
     Y: =0
     ZIndex: =1
 
+    gal_SideNav As gallery.galleryVertical:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =640
+        Items: =cmp_SideNav.Items
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(ThisItem.Screen)
+        ShowScrollbar: =false
+        TemplatePadding: |
+            =0
+        TemplateSize: =125
+        Width: =80
+        ZIndex: =1
+
+        ico_SideNav_icon As icon.Home:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =cmp_SideNav.Color
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =29
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =ThisItem.Icon
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =35
+            X: =(Parent.TemplateWidth-Self.Width)/2
+            Y: =15
+            ZIndex: =1
+
+        lbl_SideNav_value As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =cmp_SideNav.Color
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =70
+            Size: =10
+            Text: =ThisItem.Value
+            Width: =Parent.TemplateWidth
+            Y: =50
+            ZIndex: =2
+
