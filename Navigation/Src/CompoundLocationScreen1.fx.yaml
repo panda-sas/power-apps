@@ -33,6 +33,7 @@ CompoundLocationScreen1 As screen:
         ZIndex: =2
 
     cmp_SideNav_3 As cmp_SideNav:
+        Default: ="Location"
         Items: =colSidebarMenu
         Width: =80
         ZIndex: =3

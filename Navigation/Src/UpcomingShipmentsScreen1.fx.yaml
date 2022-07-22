@@ -33,6 +33,7 @@ UpcomingShipmentsScreen1 As screen:
         ZIndex: =2
 
     cmp_SideNav_2 As cmp_SideNav:
+        Default: ="Upcoming Shipments"
         Items: =colSidebarMenu
         Width: =80
         ZIndex: =3

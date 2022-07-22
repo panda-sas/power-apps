@@ -33,6 +33,7 @@ CompoundDetailsScreen1 As screen:
         ZIndex: =2
 
     cmp_SideNav_4 As cmp_SideNav:
+        Default: ="Repository"
         Items: =colSidebarMenu
         Width: =80
         ZIndex: =3

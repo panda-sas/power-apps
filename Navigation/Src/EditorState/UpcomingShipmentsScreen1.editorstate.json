@@ -118,7 +118,7 @@
         {
           "Category": "Data",
           "PropertyName": "Default",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
