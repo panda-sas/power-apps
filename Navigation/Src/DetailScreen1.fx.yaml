@@ -119,11 +119,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
-                Size: =21
+                Size: =20
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -140,11 +140,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Lighter
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -176,11 +177,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
-                Size: =21
+                Size: =20
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -198,11 +199,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Lighter
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -217,7 +219,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@NotifyCompoundsArrival],DataSourceInfo.DisplayName,"Provider")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =110
             Required: =false
             Update: =DataCardValue3.Selected
             Width: =568
@@ -227,7 +229,6 @@
             ZIndex: =1
 
             DataCardKey3 As label:
-                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -235,11 +236,12 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
-                Height: =48
+                Height: =42
+                LineHeight: =0
                 PaddingLeft: =0
-                Size: =21
+                Size: =20
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -262,13 +264,16 @@
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Font: =Font.'Segoe UI'
-                Height: =70
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Lighter
+                Height: =56
                 HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
                 Items: =Choices([@NotifyCompoundsArrival].Provider)
+                PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingTop: =0
                 PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
@@ -276,7 +281,7 @@
                 SearchItems: =Choices(NotifyCompoundsArrival.Provider,DataCardValue3.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 SelectMultiple: =false
-                Size: =21
+                Size: =18
                 Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey3.Y + DataCardKey3.Height + 5
@@ -345,7 +350,6 @@
             ZIndex: =1
 
             DataCardKey4 As label:
-                AutoHeight: =true
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -353,11 +357,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
-                Height: =48
+                Height: =61
                 PaddingLeft: =0
-                Size: =21
+                Size: =20
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -375,11 +379,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Lighter
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -411,11 +416,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
-                Size: =21
+                Size: =20
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -433,11 +438,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Lighter
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
@@ -468,11 +474,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
                 FontWeight: =FontWeight.Semibold
                 Height: =48
                 PaddingLeft: =0
-                Size: =21
+                Size: =20
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -490,11 +496,12 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
+                Font: =Font.'Lato Light'
+                FontWeight: =FontWeight.Lighter
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =21
+                Size: =18
                 Text: =Parent.Default
                 Width: =Parent.Width - 60
                 X: =30
