@@ -1393,7 +1393,14 @@
             "NameMapSourceSchema": "?"
           },
           "WrapCount",
-          "TemplateSize",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "125",
+            "InvariantPropertyName": "TemplateSize",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -1540,7 +1547,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "125",
+            "InvariantScript": "110",
             "Property": "TemplateSize",
             "RuleProviderType": "Unknown"
           },
@@ -1684,7 +1691,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "637941177451069047",
+    "LastModifiedTimestamp": "637941178119781617",
     "Name": "cmp_SideNav",
     "Rules": [
       {
@@ -1834,7 +1841,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "637941177451069047",
+  "LastModifiedTimestamp": "637941178119781617",
   "Name": "ef9869f680404c098fb6b6f51aa8d963",
   "OverridableProperties": {},
   "Version": "637941025611710172"

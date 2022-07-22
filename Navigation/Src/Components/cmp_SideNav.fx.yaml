@@ -27,7 +27,7 @@ cmp_SideNav As CanvasComponent:
         ShowScrollbar: =false
         TemplatePadding: |
             =0
-        TemplateSize: =125
+        TemplateSize: =110
         Width: =80
         ZIndex: =1
 
