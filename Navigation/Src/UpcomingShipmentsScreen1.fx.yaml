@@ -1,3 +1,39 @@
 UpcomingShipmentsScreen1 As screen:
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
+    TopBar_Rectangle_1 As rectangle:
+        BorderColor: =RGBA(237, 237, 237, 1)
+        BorderThickness: =1
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =White
+        FocusedBorderThickness: =4
+        Height: =74
+        HoverFill: =RGBA(164, 38, 44, 1)
+        PressedFill: =RGBA(164, 38, 44, 1)
+        Width: =Parent.Width
+        ZIndex: =1
+
+    TopBar_Label_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(128, 128, 128, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =TopBar_Rectangle_1.Height
+        Size: =30
+        Text: ="Upcoming Shipments"
+        Width: |
+            =Parent.Width/2
+        X: =284
+        ZIndex: =2
+
+    cmp_SideNav_2 As cmp_SideNav:
+        Items: =colSidebarMenu
+        Width: =80
+        ZIndex: =3
+
