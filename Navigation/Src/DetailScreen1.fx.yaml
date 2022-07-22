@@ -3,7 +3,7 @@
 
     RectQuickActionBar2 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =RGBA(51, 52 ,74, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
@@ -16,7 +16,7 @@
         DisabledColor: =RGBA(220, 220, 220, 1)
         Height: =88
         Icon: =Icon.ChevronLeft
-        OnSelect: =Navigate(BrowseScreen1, ScreenTransition.None)
+        OnSelect: =Navigate(UpcomingShipmentsScreen1, ScreenTransition.None)
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
@@ -72,9 +72,10 @@
     LblAppName2 As label:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
+        Font: =Font.'Lato Light'
+        FontWeight: =FontWeight.Lighter
         Height: =88
-        Size: =27
+        Size: =30
         Text: |
             =TargetAssay_DataCard2.Default
         Width: =Parent.Width - Self.X - IconDelete1.Width - IconEdit1.Width
