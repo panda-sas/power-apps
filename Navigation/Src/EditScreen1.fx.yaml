@@ -3,7 +3,7 @@
 
     RectQuickActionBar3 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =RGBA(51, 52 ,74, 1)
         Height: =88
         Width: =Parent.Width
         ZIndex: =1
