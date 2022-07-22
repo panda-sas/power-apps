@@ -9,8 +9,8 @@
         Fill: =RGBA(141, 198, 63, 1)
         HoverFill: =RGBA(164, 38, 44, 1)
         PressedFill: =RGBA(164, 38, 44, 1)
-        X: =270
-        Y: =427
+        X: =541
+        Y: =195
         ZIndex: =1
 
     iconCheck1 As icon.Check:
@@ -26,8 +26,8 @@
         PaddingTop: =18
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =iconCircle1.Width
-        X: =270
-        Y: =427
+        X: =541
+        Y: =195
         ZIndex: =2
 
     LblSuccessMsg1 As label:
@@ -45,7 +45,7 @@
         Size: =21
         Text: ="SACNet group is notified!"
         Width: =Parent.Width * 0.75
-        X: =80
-        Y: =540
+        X: =153
+        Y: =308
         ZIndex: =3
 
