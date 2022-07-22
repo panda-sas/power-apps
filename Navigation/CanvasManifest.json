@@ -104,9 +104,9 @@
   "ScreenOrder": [
     "HomeScreen1",
     "UpcomingShipmentsScreen1",
+    "DetailScreen1",
     "CompoundLocationScreen1",
     "CompoundDetailsScreen1",
-    "DetailScreen1",
     "EditScreen1",
     "NotifyScreen1"
   ]
