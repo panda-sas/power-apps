@@ -3,7 +3,7 @@ cmp_SideNav As CanvasComponent:
     CurrentIndicatorColor: =ColorFade(RGBA(29,161,242,1),70%)
     Fill: =RGBA(51, 52 ,74, 1)
     Height: =640
-    HoverFill: =RGBA(0, 0, 0, 1)
+    HoverFill: =RGBA(255,255,255,10%)
     Items: |-
         =Table(
             {Value: "Item 1", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
@@ -11,7 +11,7 @@ cmp_SideNav As CanvasComponent:
             {Value: "Item 3", Icon: Icon.Waypoint, Screen: App.ActiveScreen},
             {Value: "Item 4", Icon: Icon.Waypoint, Screen: App.ActiveScreen}
          )
-    SelectedFill: =RGBA(0, 0, 0, 1)
+    SelectedFill: =RGBA(255,255,255,10%)
     Width: =640
     X: =0
     Y: =0
