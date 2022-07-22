@@ -104,66 +104,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "UpcomingShipmentsScreen1.BrowseGallery1.Icon1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UpcomingShipmentsScreen1.BrowseGallery1.Icon1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "UpcomingShipmentsScreen1",
-                "type": "UpcomingShipmentsScreen1.BrowseGallery1.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "UpcomingShipmentsScreen1.BrowseGallery1.Icon1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "UpcomingShipmentsScreen1.BrowseGallery1.Icon1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "UpcomingShipmentsScreen1",
-                "type": "UpcomingShipmentsScreen1.BrowseGallery1.Icon1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "DetailScreen1.DetailForm1.Provider_DataCard1.DataCardValue3.AccessibleLabel"
                 }
               ],

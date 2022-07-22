@@ -13,58 +13,33 @@ UpcomingShipmentsScreen1 As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-    TopBar_Label_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(128, 128, 128, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =TopBar_Rectangle_1.Height
-        Size: =30
-        Text: ="Upcoming Shipments"
-        Width: |
-            =Parent.Width/2
-        X: =315
-        ZIndex: =2
-
-    cmp_SideNav_2 As cmp_SideNav:
-        Default: ="Upcoming Shipments"
-        Items: =colSidebarMenu
-        Width: =80
-        ZIndex: =3
-
-    "BrowseGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+    "BrowseGallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
-        Height: =Parent.Height - Self.Y
+        Height: =476
         Items: =SortByColumns(Filter([@NotifyCompoundsArrival], StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))
         Layout: =Layout.Vertical
         OnSelect: =Navigate(DetailScreen1, ScreenTransition.Fade)
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =Min(168, Self.Height - 60)
+        TemplateSize: =Min(104, Self.Height - 60)
         Transition: =Transition.Pop
-        Width: =1054
-        X: =80
-        Y: =TextSearchBox1.Y + TextSearchBox1.Height
-        ZIndex: =4
+        Width: =1037
+        X: =99
+        Y: =163
+        ZIndex: =1
 
         Title1 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
+            Font: =Font.'Lato Light'
+            FontWeight: =FontWeight.Lighter
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
+            Size: =18
             Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
@@ -75,45 +50,27 @@ UpcomingShipmentsScreen1 As screen:
         Subtitle1 As label:
             Color: =RGBA(51, 51, 51, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
+            Font: =Font.'Lato Light'
+            FontWeight: =FontWeight.Lighter
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =18
+            Size: =16
             Text: |-
                 =Concatenate("Order #",ThisItem.OrderID)
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 104
             X: =32
-            Y: =Title1.Y + Title1.Height + 2
+            Y: =Title1.Y + Title1.Height + 4
             ZIndex: =2
-
-        Body1 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            Height: =Self.Size * 4
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =16
-            Text: |
-                =ThisItem.ConfirmationDate
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 104
-            X: =32
-            Y: =Subtitle1.Y + Subtitle1.Height + 4
-            ZIndex: =3
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(164, 38, 44, 1)
+            Color: =RGBA(51, 52 ,74, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -133,53 +90,58 @@ UpcomingShipmentsScreen1 As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Tooltip: ="View item details"
-            Width: =60
+            Width: =50
             X: =Parent.TemplateWidth - Self.Width - 5
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
+            ZIndex: =3
 
         Separator1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Fill: =ColorFade(Gray, -10%)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
-            ZIndex: =5
+            ZIndex: =4
 
-        Icon1 As icon.Edit:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(164, 38, 44, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =50
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Edit
-            OnSelect: =Navigate(EditScreen1,ScreenTransition.CoverRight)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =50
-            X: =890
-            Y: =59
-            ZIndex: =6
+    TopBar_Label_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(128, 128, 128, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Lato Light'
+        FontWeight: =FontWeight.Lighter
+        Height: =TopBar_Rectangle_1.Height
+        Size: =30
+        Text: ="Upcoming Shipments"
+        Width: |
+            =Parent.Width/2
+        X: =315
+        ZIndex: =2
+
+    cmp_SideNav_2 As cmp_SideNav:
+        Default: ="Upcoming Shipments"
+        Items: =colSidebarMenu
+        Width: =80
+        ZIndex: =3
 
     Rectangle11 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
         Fill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
-        Height: =18
-        Width: =1056
-        X: =80
-        Y: =167
+        Height: =7
+        Width: =1034
+        X: =102
+        Y: =145
         ZIndex: =5
 
     TextSearchBox1 As text:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        BorderThickness: =2
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
         Color: =RGBA(51, 51, 51, 1)
         Default: =""
         DelayOutput: =true
@@ -188,12 +150,15 @@ UpcomingShipmentsScreen1 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
-        Height: =68
+        Height: =57
         HintText: ="Search items"
         HoverBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
-        PaddingLeft: =70
+        LineHeight: =1
+        PaddingBottom: =8
+        PaddingLeft: =50
+        PaddingTop: =2
         PressedBorderColor: =RGBA(164, 38, 44, 1)
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(255, 255, 255, 1)
@@ -201,10 +166,10 @@ UpcomingShipmentsScreen1 As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Size: =21
-        Width: =1056
-        X: =80
-        Y: =117
+        Size: =20
+        Width: =1037
+        X: =99
+        Y: =95
         ZIndex: =6
 
     IconRefresh1 As icon.Reload:
@@ -274,7 +239,7 @@ UpcomingShipmentsScreen1 As screen:
 
     SearchIcon1 As icon.Search:
         BorderColor: =RGBA(166, 166, 166, 1)
-        Color: =RGBA(164, 38, 44, 1)
+        Color: =RGBA(128, 128, 128, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(220, 220, 220, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)

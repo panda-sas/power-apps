@@ -4367,11 +4367,6 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "DisplayMode",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "X",
           "RuleProviderType": "Unknown"
         },
@@ -4448,6 +4443,11 @@
         {
           "Category": "Design",
           "PropertyName": "TabIndex",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "DisplayMode",
           "RuleProviderType": "Unknown"
         },
         {
