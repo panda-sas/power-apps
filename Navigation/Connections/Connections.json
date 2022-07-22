@@ -1,0 +1,70 @@
+{
+  "290a7a63-703f-43dc-a5f0-50cae61f1156": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1587/1.0.1587.2924/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "290a7a63-703f-43dc-a5f0-50cae61f1156"
+  },
+  "42bac539-a54e-4744-accb-dcf1bd0c788a": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "42bac539-a54e-4744-accb-dcf1bd0c788a"
+  },
+  "9bf428ee-0c80-4766-b255-42166c5c9e36": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://tamucs.sharepoint.com/teams/SACNetCompoundsTracking": {
+        "dataSources": {
+          "NotifyCompoundsArrival": {
+            "tableName": "1d86ffc9-83f0-45bd-a81c-184db3035836"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "NotifyCompoundsArrival"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9bf428ee-0c80-4766-b255-42166c5c9e36"
+  }
+}
