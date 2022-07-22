@@ -1,3 +1,12 @@
 App As appinfo:
     BackEnabled: =false
+    OnStart: |-
+        =Set(colSidebarMenu,
+          Table(
+            {Value: "Home", Icon: Icon.Home, Screen: HomeScreen1},
+            {Value: "Upcoming Shipments", Icon: Icon.Mail, Screen: UpcomingShipmentsScreen1},
+            {Value: "Location", Icon: Icon.Location, Screen: CompoundLocationScreen1},
+            {Value: "Repository", Icon: Icon.Printing3D, Screen: CompoundDetailsScreen1}
+          )
+        )
 
