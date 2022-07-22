@@ -8,8 +8,8 @@ HomeScreen1 As screen:
         Fill: =White
         FocusedBorderThickness: =4
         Height: =74
-        HoverFill: =RGBA(164, 38, 44, 1)
-        PressedFill: =RGBA(164, 38, 44, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
         Width: =Parent.Width
         ZIndex: =1
 
@@ -29,7 +29,7 @@ HomeScreen1 As screen:
         Text: ="Summary"
         Width: |
             =Parent.Width/2
-        X: =284
+        X: =315
         ZIndex: =2
 
     cmp_SideNav_1 As cmp_SideNav:
